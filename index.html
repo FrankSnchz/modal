@@ -43,7 +43,7 @@
           </p>
           <div class="buttons">
             <a id="btn_modal" href="#">LEARN MORE</a>
-            <a href="">VIEW ALL TEAM</a>
+            <a id="btn_view" href="#">VIEW ALL TEAM</a>
           </div>
         </div>
       </section>
@@ -80,7 +80,7 @@
             <i class="icon fa-brands fa-twitter"></i>
             <i class="icon fa-brands fa-pinterest"></i>
           </div>
-          <a href="">GET IN TOUCH</a>
+          <a id="btn_git" href="#">GET IN TOUCH</a>
         </article>
         <article>
           <figure>
@@ -93,14 +93,14 @@
             <i class="icon fa-brands fa-twitter"></i>
             <i class="icon fa-brands fa-pinterest"></i>
           </div>
-          <a href="">GET IN TOUCH</a>
+          <a id="btn_git2" href="#">GET IN TOUCH</a>
         </article>
       </section>
     </div>
     <footer></footer>
 
     <script>
-      $("#btn_modal").click(function () {
+      $("#btn_modal, #btn_view, #btn_git, #btn_git2").click(function () {
         $("#modal").addClass("show");
       });
       $("#close-btn").click(function () {
