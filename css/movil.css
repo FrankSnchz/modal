@@ -1,0 +1,32 @@
+@media screen and (max-width: 480px) {
+    .team{
+        display: block;
+
+        .buttons {
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 10px;
+
+            a {
+                display: inline;
+            }
+        }
+
+        .our-team-pics {
+            padding: 40px;
+        }
+    }
+
+    .our-team-info, .our-team-pics {
+        border: 1px red solid;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .close-btn {
+        position: fixed; /* Posiciona el botón en relación al viewport */
+        top: calc(50% - 220px); /* Ajustar este valor para situarlo arriba del diálogo */
+        left: calc(50% + 30vw); /* Ajustar este valor para situarlo a la derecha del diálogo */
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/movil.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/138f20aa8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <figure>
+        <img src="resources/logo.jpg" alt="" />
+      </figure>
+    </header>
+
+    <div class="team">
+      <section class="our-team-info">
+        <div class="size">
+          <p id="our-team">Our Team</p>
+          <h1>A Dedicated Team of Experts</h1>
+          <p id="p-bold">
+            Passion, experience and a fierce commitment to education are the
+            cornerstones of our success in the beauty industry
+          </p>
+          <p class="p-normal">
+            We believe that being the largest SPA in the area is not enough in
+            itself to satisfy the needs of our customers. For this reason we
+            have built up a staff of specialized professionals who are proud to
+            welcome you to our hotel, present What We Do, listen to your needs
+            and guarantee well-being and relaxation during your stay at our SPA
+            Resort.
+          </p>
+          <p class="p-normal">
+            Everyone in our team is a certified specialist capable of delivering
+            a unique service of high quality you won't find anywhere else in
+            modern spa and resort industry.
+          </p>
+          <div class="buttons">
+            <a id="btn_modal" href="#">LEARN MORE</a>
+            <a href="">VIEW ALL TEAM</a>
+          </div>
+        </div>
+      </section>
+
+      <div id="modal" class="overlay">
+        <div class="dialog">
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions concerning our services, please fill out
+            the contact form below.
+          </p>
+
+          <form>
+            <input placeholder="Name *" />
+            <input placeholder="E-mail *" />
+            <textarea placeholder="Message *" rows="4"></textarea>
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+        <div id="close-btn" class="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <section class="our-team-pics">
+        <article>
+          <figure>
+            <img src="resources/foto1.jpg" alt="" />
+          </figure>
+          <h2>Jessica Cooper</h2>
+          <p>Esthetician</p>
+          <div class="icons">
+            <i class="icon fa-brands fa-facebook-f"></i>
+            <i class="icon fa-brands fa-twitter"></i>
+            <i class="icon fa-brands fa-pinterest"></i>
+          </div>
+          <a href="">GET IN TOUCH</a>
+        </article>
+        <article>
+          <figure>
+            <img src="resources/foto2.jpg" alt="" />
+          </figure>
+          <h2>Robert Wagner</h2>
+          <p>Hairdresser</p>
+          <div class="icons">
+            <i class="icon fa-brands fa-facebook-f"></i>
+            <i class="icon fa-brands fa-twitter"></i>
+            <i class="icon fa-brands fa-pinterest"></i>
+          </div>
+          <a href="">GET IN TOUCH</a>
+        </article>
+      </section>
+    </div>
+    <footer></footer>
+
+    <script>
+      $("#btn_modal").click(function () {
+        $("#modal").addClass("show");
+      });
+      $("#close-btn").click(function () {
+        $("#modal").removeClass("show");
+      });
+
+      //function tiempo() {
+      //$("#modal").addClass("show");
+      //}
+      //setTimeout(tiempo, 5000);
+
+      //Cerrar cuando le doy afuera del dialog
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          $("#modal").removeClass("show");
+        }
+      };
+
+      //Para cerrarlo cuando le doy a Esc
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          $("#modal").removeClass("show");
+        }
+      });
+    </script>
+  </body>
+</html>
